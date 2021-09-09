@@ -1,20 +1,26 @@
 def main():
-    moneda = int(print("""
-    ***************************************************
+    moneda = float(input("""
     Bienvenido al conversor de dolar $ gratis
-    Ingrese la opcion de la moneda que desea convertir
-    1. Peso Boliviano Bs
-    2. Yen ¥
-    3. Real R$
-    ***************************************************
+        1. Peso Boliviano Bs
+        2. Yen ¥
+        3. Real R$
+    Ingrese la opcion de la moneda que desea convertir: """))
 
-    """))
     if moneda == 1 :
-        pass
+        valor = float(input(print("Cuantos Bs desea cambiar a $? :  ")))
+        dolar = valor / 6.9
+        print("Su total seria de " + str(dolar) + "$")
+
     elif moneda == 2 :
-        pass
+        valor = float(input(print("Cuantos ¥ desea cambiar a $? :  ")))
+        dolar = valor / 109.91
+        print("Su total seria de " + str(dolar) + "$")
+
     elif moneda == 3 :
-        pass
+        valor = float(input(print("Cuantos R$ desea cambiar a $? :  ")))
+        dolar = valor / 5.32
+        print("Su total seria de " + str(dolar) + "$")
+
     else:
         print("Elige una opcion valida ctm!")
 
