@@ -17,7 +17,6 @@ def primo(numero) :
     else :
         return False
 
-
 def main():
     numero = float(input("Ingresa un numero: "))
     esPrimo = primo(numero)
@@ -28,8 +27,6 @@ def main():
     else :
         print("No es norteño xc ")
     
-
-
-
+    
 if __name__ == '__main__': 
     main()
