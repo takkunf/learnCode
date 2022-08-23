@@ -2,28 +2,28 @@ import random
 
 
 def main() :
-    vida = 4
-    aleatorio = random.randint(1, 100)
-    elegido = int(input("Elige un numero del 1 al 100, tienes 5 vidas :  "))
+    life = 4
+    rand = random.randint(1, 100)
+    chosenone = int(input("Choose a number from 1 to 100, you have 5 lives :  "))
     
-    while aleatorio != elegido and vida != 0 :
+    while rand != chosenone and life != 0 :
         
 
-        if aleatorio > elegido :
-            print("Elige un numero mayor, te quedan "  + str(vida) + " vidas", end = " ")
+        if rand > chosenone :
+            print("Choose a higher number, you have "  + str(life) + " lives", end = " ")
 
         else:
-            print("Elige un numero menor, te quedan "  + str(vida) + " vidas", end = " ")
+            print("Choose a lower number, you have"  + str(life) + " lives", end = " ")
         
-        vida -= 1
-        elegido = int(input(" :  "))
+        life -= 1
+        chosenone = int(input(" :  "))
         
 
-    if vida != 0 :
-        print("Al fin lograste algo en la vida, Maldito inutil! :D ")
+    if life != 0 :
+        print("You win!!")
     
     else :
-        print("No logras nada en la vida... porque sigues respirando???? ")
+        print("You lose... :c The number was " + str(rand))
 
 
 
